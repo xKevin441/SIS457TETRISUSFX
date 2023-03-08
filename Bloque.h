@@ -17,5 +17,5 @@ private:
 	string forma;
 
 public:
-
+	void rotar(int angulo);
 };
