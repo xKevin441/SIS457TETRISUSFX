@@ -7,20 +7,28 @@ using namespace std;
 class Tablero
 {
 private:
-	int filalimiteSuperior;
+	string nombre;
+	int filaLimiteSuperior;
 	int filaActual;
 	int numeroFilasEliminadas;
-	bloque bloqueSiguiente;
-	int rotarBloque;
-	Tablero tablero;
+	Bloque bloqueSiguiente;
 
 
 	//Metodos
 public:
-	void inicializarTablero();
+	Tablero() {
+		nombre = "tablero sin nombre";
+	}
+
+	void incializarTablero();
+
 	bool rotarBloque();
-	void bajarBloque();	//lo baja de golpe
+	void bajarBloque();
 	bool moverBloque(int direccion);
 
+
+	//Metodos accesores
+	void setNombre(string _nombre) { nombre = _nombre; }
+	string getNombre() { return nombre; }
 };
 

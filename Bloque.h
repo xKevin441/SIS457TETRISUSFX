@@ -3,9 +3,8 @@
 #include <string>
 using namespace std;
 
-class bloque {
+class Bloque {
 private:
-	string forma;
 	int sentidoRotacion;
 	int alto;
 	int ancho;
@@ -18,4 +17,6 @@ private:
 
 public:
 	void rotar(int angulo);
+	void moverHorizaontalmente(int posicion);
+	void acelerar(float velocidad);
 };
