@@ -19,9 +19,19 @@ private:
 	Tablero tablero;
 
 public:
+
 	Escenario() {
 		puntaje = 0;
 	}
+
+	void mostrarPuntaje(int puntaje);
+	void mostrarMejorPuntaje(int mejorpuntaje);
+	void mostrarNivel(int nivel);
+	void mostrarNumerovidas(int numeroVidas);
+
+
+
+
 
 	void setNombre(string _nombre) { nombre = _nombre; }
 	string getNombre() { return nombre; }

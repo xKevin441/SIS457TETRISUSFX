@@ -6,7 +6,7 @@ void Tablero::incializarTablero()
 {
 	filaActual = 0;
 	numeroFilasEliminadas = 0;
-	// bloqueSiguiente = NULL;
+	bloqueSiguiente = NULL;
 }
 
 bool Tablero::rotarBloque()

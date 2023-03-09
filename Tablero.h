@@ -12,22 +12,23 @@ private:
 	int filaActual;
 	int numeroFilasEliminadas;
 	Bloque bloqueSiguiente;
+	int lineaLlena;
+	int alto;
+	int ancho;
+	int cantidadTotalDeTiles; 
 
-
-	//Metodos
 public:
 	Tablero() {
 		nombre = "tablero sin nombre";
 	}
 
 	void incializarTablero();
-
 	bool rotarBloque();
 	void bajarBloque();
 	bool moverBloque(int direccion);
 
 
-	//Metodos accesores
+	//metodos accesores
 	void setNombre(string _nombre) { nombre = _nombre; }
 	string getNombre() { return nombre; }
 };

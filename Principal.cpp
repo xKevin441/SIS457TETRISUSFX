@@ -1,6 +1,7 @@
 //Directorio principal
 #include <iostream>
 #include "Escenario.h"
+#include "Bloque.h"
 using namespace std;
 
 int main() {
@@ -12,5 +13,8 @@ int main() {
 	cout << "El nombre del escenario es:" << escenarioInicial.getNombre() << endl;
 	escenarioInicial.setNombre("Inicia la historia tetris");
 
-	cout << "El nombre del escenario es:" << escenarioInicial.getNombre() << endl;
+	Bloque cuadrado, linea, punto, zeta, T, ele;
+
+	Tablero tableroDeJuego;
+
 }

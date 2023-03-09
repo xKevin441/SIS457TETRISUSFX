@@ -6,10 +6,12 @@ using namespace std;
 class gameManager
 {
 private:
-	bool iniciarJuego;
+	bool iniciar;
 	bool pausarJuego;
-	bool reiniciarJuego;
 
 public:
-
+	bool iniciarJuego();
+	bool pausar();
+	bool reiniciar();
+	
 };

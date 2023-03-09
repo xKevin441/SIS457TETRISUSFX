@@ -1,19 +1,20 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class Bloque {
 private:
+	int numeroTiles;
 	int sentidoRotacion;
-	int alto;
-	int ancho;
+	vector < vector <bool> > apariencia;
+	int angulo;
+	bool movimiento;
 	string color;
 	float velocidad;
 	int posicionX;
 	int posicionY;
-	string nombre;
-	string forma;
 
 public:
 	void rotar(int angulo);
